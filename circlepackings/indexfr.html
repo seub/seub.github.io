@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset=utf-8 />
+	<meta name="description" content="Circle Packings" />
+        <title>Circle Packings</title>
+        <link rel="stylesheet" href="/css/style.css" type="text/css" />
+	<link rel="icon" href="favicon.ico" type="image/x-icon" /><link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    </head>
+    <body>
+	<div id="main">
+		<div id="header">
+			<p> <a href="indexen.html">English</a></p>
+		</div>
+		<div id="maincontentfull">
+				<p class="titre0">Circle Packings</p>
+				<p><em>Circle Packings</em> est un logiciel mathématique créé par <a href="http://www.univ-orleans.fr/mapmo/membres/beeker/index.php?langue=fr">Benjamin Beeker</a>
+				et <a href="https://www.brice.loustau.eu/indexfr.html">Brice Loustau</a>. Essayez-le ! Il est simple à installer et à utiliser.</p> 
+
+				<p>Sur cette page vous trouverez une brève description des fonctionnalités du logiciel et un guide d'installation rapide. Des informations plus détaillées
+				sont disponibles dans le menu d'Aide du logiciel.</p><br />
+
+				<div id="liste1">
+					<ol>
+						<li><a href="#briefoverview">Présentation rapide</a></li>
+						<li><a href="#quickinstall">Installation rapide</a></li>
+						<li><a href="#abouttheprogram">À propos du programme</a></li>
+					</ol>
+				</div>
+
+				<p class="titre2" id="briefoverview">Présentation rapide</p>
+				<p>L'algorithme au coeur du programme calcule numériquement l'empilement de cercles associé à un graphe planaire, tel que le prédit le
+				<em>théorème de l'empilement de cercles</em><sup>1</sup>, comme l'illustre l'image ci-dessous :</p>
+				<p> <center><img src="/ressources/circlepackings1.png" width=95% /></center><br> </p>
+				<p>Suivant une idée de Thurston, le programme affiche l'empilement de cercles associé à un domaine simplement connexe du plan, en vue d'approcher
+				l'application conforme de Riemann<sup>2</sup> :
+				<p> <center><img src="/ressources/circlepackings2.png" width=95% /></center><br> </p>
+				<p>En se basant sur cette idée, le programme peut calculer l'application conforme de Riemann entre deux domaines simplement 
+				connexes quelconques. Ci-dessous un exemple avec une image en fond :</p>
+				<p> <center><img src="/ressources/circlepackings3.png" width=95% /></center><br> </p>
+
+				<hr width=75% noshade size=2>
+				<p class="petit"><sup>1</sup>Visitez l'article Wikipedia <a href="http://en.wikipedia.org/wiki/Circle_packing_theorem">Circle packing theorem</a>
+				(en anglais) pour en savoir plus. L'algorithme numérique est dû aux mathématiciens Charles R. Collins et Ken Stephenson. Stephenson a également
+				développé un programme autour des empilements de cercles, vous le trouverez (ainsi que d'autres contenus mathématiques intéressants) sur
+				<a href="http://www.math.utk.edu/~kens/">sa page web</a>.</p>
+				<p class="petit"><sup>2</sup>Visitez l'article Wikipédia
+				<a href="http://en.wikipedia.org/wiki/Circle_packing_theorem">Circle packing theorem</a> comme point de départ pour en apprendre plus.</p>
+
+
+				<br />
+				<p class="titre2" id="quickinstall">Installation rapide</p>
+				
+				<p class="titre3">Windows</p>
+				<p>Téléchargez et éxécutez <a href="https://github.com/downloads/seub/CirclePackings/CirclePackingsSetup.exe">cet outil d'installation</a>. Pour Windows XP, téléchargez plutôt <a href="https://github.com/downloads/seub/CirclePackings/CirclePackingsSetupXP.exe">celui-ci</a>.</p>
+				<p class="titre3">Mac OS</p>
+				<p>Téléchargez et installez <a href="https://github.com/downloads/seub/CirclePackings/CirclePackings.dmg">ce fichier dmg</a>. Vous pouvez également compiler le programme à partir des sources comme sous Linux (voir ci-dessous).
+				<p class="titre3">Linux</p>
+				<p>Si vous avez une distribution basée sur Debian (Ubuntu, Mint...), vous pouvez télécharger <a href="https://github.com/downloads/seub/CirclePackings/circlepackings_1.0_i386.deb">ce paquet</a> (32 bits, fonctionne sur tous systèmes mais plus lent) ou <a href="https://github.com/downloads/seub/CirclePackings/circlepackings_1.0_amd64.deb">ce paquet</a> (systèmes 64 bits seulement).
+				<p>Pour installer le paquet , il suffit de double-cliquer sur le fichier téléchargé si vous avez un gestionnaire de logiciels graphique (qui devrait automatiquement installer les dépendances). Sinon, ouvrez un terminal et entrez <span class = "in_code">sudo dpkg -i "nom_du_fichier"</span>. Vous serez alors invités à installer un certain nombre de dépendances, faites-le et recommencez la commande précédente.
+				<p> Alternativement, le programme peut être compilé à partir des sources. Voici comment faire :
+					<ol>
+						<li>Installez le framework Qt: faites une recherche sur le web pour déterminer comment faire cela sur votre système. Pour les distributions basées sur Debian, <span class = "in_code">sudo apt install libqt4-dev</span> devrait suffire (essayez <span class = "in_code">sudo apt-get install qt5-default qtdeclarative5-dev</span> pour une version plus récente).</li>
+						<li>Téléchargez <a href="https://github.com/downloads/seub/CirclePackings/CirclePackings.tar.gz">cette archive</a> et décompressez-la. NB : Vous pouvez aussi cloner le repo git : <span class = "in_code">git clone https://github.com/seub/CirclePackings.git</span>.</li>
+						<li>Dans un terminal, allez dans le répertoire de l'archive décompressée et faites <span class = "in_code">qmake</span> puis <span class = "in_code">make</span> (ou <span class = "in_code">make -j N</span> pour gagner du temps, où N est le nombre de coeurs de votre machine).</li>
+						<li>C'est terminé ! Un fichier éxécutable "CirclePackings" a été généré. Pour le lancer, double-cliquez dessus ou depuis un terminal dans le bon répertoire : entrez <span class = "in_code">./CirclePackings</span>. NB : Pour créer des raccourcis, définir l'icône de l'application, etc : il va vous vous falloir trouver comment procéder en fonction de votre système. Par exemple pour Ubuntu avec Unity, vous pouvez suivre <a href="http://xiaonosekai.wordpress.com/2012/06/16/how-to-create-launcher-for-the-dash-of-unity/">ce guide</a>.
+					</ol>
+
+				<br />
+				<p><strong>Note:</strong> L'installation a été testée sur divers systèmes mais on n'est jamais à l'abri d'un problème de compatibilité,
+merci de <a href="mailto:brice@loustau.eu">nous le signaler</a> si la situation se présente. 
+				Une fois le logiciel installé, jetez un coup d'oeil au menu Help pour savoir comment l'utiliser et en apprendre plus sur le programme.</p>
+
+
+				<br />
+				<p class="titre2" id="abouttheprogram">À propos du programme</p>
+				<p>Ce programme a été écrit en C++ en utilisant le <a href="http://qt-project.org/">framework Qt</a>. Il est libre et open source (sous la <a href="http://www.gnu.org/copyleft/gpl.html">license publique général GNU</a>), toutes les sources et autres fichiers sont disponibles sur GitHub : <a href="https://github.com/seub/CirclePackings">https://github.com/seub/CirclePackings</a>. Le choix du langage a été fait notamment pour des raisons de performances.</p>
+				<p>La version actuelle "stable" du logiciel (1.0) a été terminée en octobre 2012.</p>
+	</div>
+    </body>
+</html>
+
+

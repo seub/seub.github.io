@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset=utf-8 />
+	<meta name="description" content="Professional Webpage of Brice Loustau - Page professionnelle de Brice Loustau" />
+        <title>Calculus III Schedule (Spring 2016)</title>
+        <link rel="stylesheet" href="../../css/style.css" type="text/css" />
+	<script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
+	<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    </head>
+    <body>
+	<div id="main">
+		<div id="maincontentfull">
+
+		<p><a href="../../teaching.html">Back to Brice Loustau's web page</a>.</p>
+		
+		<p class="titre1">Calculus III (Spring 2016): Course Schedule</p>
+
+
+		<p>This course schedule is very much subject to change, refer to last version online (and make sure you <a href="javascript:window.location.reload();">refresh the page</a>).</p>
+
+		<p>For general important dates in the semester, see the academic calendar <a href="http://registrar.camden.rutgers.edu/academic-calendar-2015-2016">here</a>.</p>
+
+
+		<p>For any questions please send me an
+		e-mail: <a href="mailto:brice.loustau@rutgers.edu">brice.loustau@rutgers.edu</a>.</p>
+
+		<br /><br />
+
+		<p><strong>Class time and location:</strong><br />
+		Mondays: 9:20am-11:20, Smith Hall B-25<br />
+		Wednesdays: 9:20am-11:20, Smith Hall B-25</p>
+				
+		<div class="schedule">
+
+            	<table>
+
+            	<tr>
+                	<th>Date</th>
+                	<th>Topic</th>
+                	<th>Book section</th>
+			<th>Homework assignment</th>
+			<th>Special</th>
+                </tr>
+
+                <tr>
+                	<td>W 01/20</td>
+                	<td>Introduction, Vectors in the plane</td>
+                	<td>11.1</td>
+			<td>-</td>
+			<td>First day of class</td>
+                </tr>
+
+		<tr>
+                	<td>M 01/25</td>
+                	<td>-</td>
+                	<td>-</td>
+			<td>-</td>
+			<td>Class cancelled (snowstorm)</td>
+                </tr>
+
+		<tr>
+                	<td>W 01/27</td>
+                	<td>Vectors in the plane; 3D space</td>
+                	<td>11.1; 11.2</td>
+			<td>Review notes</td>
+			<td></td>
+                </tr>
+
+		<tr>
+                	<td>M 02/01</td>
+                	<td>3D space, 3D vectors, dot and cross products </td>
+                	<td>11.2; 11.3; 11.4</td>
+			<td>
+				Review notes <br />
+				11.1 ex. 17-22, 23, 34-41, 59, 62 <strong>[graded]</strong>
+				<strong>
+			</td>
+			<td>Graded homework assignment</td>
+                </tr>
+
+		<tr>
+                	<td>W 02/03</td>
+                	<td>Dot and cross products</td>
+                	<td>11.3; 11.4</td>
+			<td>
+			Review notes <br />				
+			11.2 ex. 1-12, 15-18, 39-41, 45-48, 61, 63</td>
+			<td></td>
+                </tr>
+
+		<tr>
+                	<td>M 02/08</td>
+                	<td>Vector-valued functions</td>
+                	<td>11.5</td>
+			<td>
+			Review notes <br />
+			11.3 ex. 1-5, 9-14, 48-52, 69 a b, 80, 84-88, 89 <br />
+			11.4 ex. 9-12, 35-38, 49, 50-51, 58
+			</td>
+			<td><a href="quiz1.pdf">Quiz #1</a></td>
+                </tr>
+
+		<tr>
+                	<td>W 02/10</td>
+                	<td>Calculus of vector-valued functions</td>
+                	<td>11.6</td>
+			<td>			
+				Review notes <br />
+				11.5 ex. 1-24 except 2 and 8, 29-32, 60-67
+			</td>
+			<td></td>
+                </tr>
+
+
+		<tr>
+                	<td>M 02/15</td>
+                	<td>Motions in space</td>
+                	<td>11.7</td>
+			<td>			
+				Review notes <br />
+				11.6 ex. 7-14, 15-26, 41-43, 47-49, 54-57, 59-61, 78-82
+			</td>
+			<td><a href="quiz2.pdf">Quiz #2</a></td>
+                </tr>
+
+		<tr>
+                	<td>W 02/17</td>
+                	<td>Motions in space; Lengths of curves</td>
+                	<td>11.7, 11.8</td>
+			<td>
+				Review notes <br />
+				11.7 ex. 7-18
+			</td>
+			<td></td>
+                </tr>
+
+		<tr>
+                	<td>M 02/22</td>
+                	<td>Curvature</td>
+                	<td>11.9</td>
+			<td>
+				Review notes <br />
+				11.7 ex. 43-45, 63, 67 <br />
+				11.8 ex. 9-22, 23-26, 41-50, 52, 63, 65
+			</td>
+			<td><a href="quiz3.pdf">Quiz #3</a></td>
+                </tr>
+
+		<tr>
+                	<td>W 02/24</td>
+                	<td>Curvature; Planes and surfaces</td>
+                	<td>11.9; 12.1</td>
+			<td>
+				Review notes <br />
+				<a href="HWn1.pdf">Homework assignement (not graded)</a><br />
+				11.9 ex. 11-20, 27-34
+			</td>
+			<td></td>
+                </tr>
+
+
+		<tr>
+                	<td>M 02/29</td>
+                	<td>Planes and surfaces</td>
+                	<td>12.1</td>
+			<td>
+				Review notes <br />
+				Chapter 11 review exercises 58, 59-62
+			</td>
+			<td><a href="quiz4.pdf">Quiz #4</a></td>
+                </tr>
+
+		<tr>
+                	<td>W 03/02</td>
+                	<td>Graphs and level curves</td>
+                	<td>12.2, 12.4</td>
+			<td>
+				Review notes <br />
+				12.1 exercises 11-16, 25-28, 29-30, 47, 48, 51
+			</td>
+			<td></td>
+                </tr>
+
+
+
+		<tr>
+                	<td>M 03/07</td>
+                	<td>Differentiation</td>
+                	<td>12.4-12.7</td>
+			<td>
+				Review notes <br />
+				12.2 exercises 11-20, 21, 24, 30-32, 38
+			</td>
+			<td></td>
+                </tr>
+
+		<tr>
+                	<td>W 03/09</td>
+                	<td>-</td>
+                	<td>-</td>
+			<td>-</td>
+			<td>
+				<a href="exam1.pdf"><strong>Exam #1</strong></a><br />
+				<a href="exam1sol.pdf"><strong>Solutions</strong></a>
+			</td>
+                </tr>
+
+
+		<tr>
+                	<td>M 03/14</td>
+                	<td>-</td>
+                	<td>-</td>
+			<td>-</td>
+			<td>No class: Spring recess</td>
+                </tr>
+
+		<tr>
+                	<td>W 03/16</td>
+                	<td>-</td>
+                	<td>-</td>
+			<td>-</td>
+			<td>No class: Spring recess</td>
+                </tr>
+
+		<tr>
+                	<td>M 03/21</td>
+                	<td>Differentiation: the gradient</td>
+                	<td>12.4-12.7</td>
+			<td>
+				Review notes <br />
+				12.4 exercises 11-19, 12.6 exercises 7-8
+			</td>
+			<td></td>
+                </tr>
+
+		<tr>
+                	<td>W 03/23</td>
+                	<td>Differentiation: the gradient; Extrema</td>
+                	<td>12.7; 12.8</td>
+			<td>
+				Review notes <br />
+				12.6 exercises 9-14, 15-20; 21-26; 33-36; 37-40
+			</td>
+			<td></td>
+                </tr>
+
+
+		<tr>
+                	<td>M 03/28</td>
+                	<td>Differentiation: Extrema; Review exercises</td>
+                	<td>12.8</td>
+			<td>
+				Review notes <br />
+				12.6 exercises 9-14, 15-20; 21-26; 33-36; 37-40
+			</td>
+			<td>Quiz #5</td>
+                </tr>
+
+		<tr>
+                	<td>W 03/30</td>
+                	<td>Multiple integration</td>
+                	<td>13.1</td>
+			<td>
+				Review notes <br />
+				12.4 exercises 29-38 (Second partial derivatives); 12.8 exercises 1-8 (Review questions), 9-18 (Critical points), 19-34 (Analyzing critical points),
+				37 (Cardboard boxes), 39-42 (Inconclusive tests)
+			</td>
+			<td></td>
+                </tr>
+
+
+		<tr>
+                	<td>M 04/04</td>
+                	<td>Multiple integration: rectangular regions</td>
+                	<td></td>
+			<td>
+				Review notes <br />
+				Same exercises as W 03/30
+			</td>
+			<td>Quiz #6</td>
+                </tr>
+
+		<tr>
+                	<td>W 04/06</td>
+                	<td></td>
+                	<td></td>
+			<td></td>
+			<td></td>
+                </tr>
+
+		<tr>
+                	<td>M 04/11</td>
+                	<td></td>
+                	<td></td>
+			<td></td>
+			<td></td>
+                </tr>
+
+		<tr>
+                	<td>W 04/13</td>
+                	<td></td>
+                	<td></td>
+			<td></td>
+			<td>
+				<strong>Exam #2</strong><br />
+				No office hours
+			</td>
+                </tr>
+
+		<tr>
+                	<td>M 04/18</td>
+                	<td></td>
+                	<td></td>
+			<td></td>
+			<td></td>
+                </tr>
+
+		<tr>
+                	<td>W 04/20</td>
+                	<td></td>
+                	<td></td>
+			<td></td>
+			<td></td>
+                </tr>
+
+		<tr>
+                	<td>M 04/25</td>
+                	<td></td>
+                	<td></td>
+			<td></td>
+			<td></td>
+                </tr>
+
+		<tr>
+                	<td>W 04/27</td>
+                	<td></td>
+                	<td></td>
+			<td></td>
+			<td></td>
+                </tr>
+
+		<tr>
+                	<td>M 05/02</td>
+                	<td>Review Session</td>
+                	<td></td>
+			<td></td>
+			<td>Last day of class</td>
+                </tr>
+
+		<tr>
+                	<td>M 05/09</td>
+                	<td>-</td>
+                	<td>-</td>
+			<td>-</td>
+			<td>
+				<strong>Final Exam</strong><br />
+				8:30 - 11:30am Smith B-25
+			</td>
+                </tr>
+
+
+            
+            	</table>
+
+		<br /><br />
+
+		<p><a href="../../teaching.html">Back to Brice Loustau's web page</a>.</p>
+			
+		</div>
+	</div>
+    </body>
+</html>
+
+

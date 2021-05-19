@@ -1,0 +1,214 @@
+*
+{
+	font-family: Helvetica;
+}
+
+body 
+{
+	width:1060px;
+	padding: 0; 
+	margin: 0 auto 0 auto; 
+	font-size: 14px;
+	color: #000000; 
+}
+
+a:link, a:active, a:visited 
+{
+	color:#0404B4;
+	text-decoration:none;
+	background-color:none;
+}
+
+a:hover 
+{
+	color:#2E9AFE;
+	text-decoration:none;
+	background-color:none;
+}
+
+div#maincontentfull
+{
+	width:880px;
+	margin:20px 0px 20px 20px;
+	padding: 20px 20px 20px 20px;
+	float:left;
+	background-color:#FFFFFF;
+	height:100%;
+}
+
+.imgfloatright 
+{
+	float:right;
+	padding:0px 0px 0px 20px;
+}
+
+
+.imgfloatright2 
+{
+	float:right;
+	padding:0px 0px 50px 30px;
+}
+
+.imgfloatleft2 
+{
+	float:left;
+	padding:0px 0px 50px 0px;
+}
+
+
+
+p 
+{	
+	margin-bottom: 5px; 
+	line-height: 150%;
+}
+
+P.italic
+{
+	font-style:italic;
+}
+
+.indent
+{
+	text-indent: 30px;
+}
+
+.titre0
+{
+	text-align:center;
+	font-size: 210%;
+	color: #000000;
+	padding: 0px 0px 0px 0px;
+}
+
+.soustitre0
+{
+	text-align:center;
+	font-size: 180%;
+	color: #000000;
+	padding: 0px 0px 50px 0px;
+}
+
+.titre1
+{
+	font-size: 175%;
+	color: #000000;
+	padding: 40px 0px 10px 0px;
+}
+
+.titre2
+{
+	font-size: 140%; 
+	color: #000000;
+	font-weight: bold;	
+	padding: 10px 0px 0px 0px;
+}
+
+.titre3
+{
+	font-size: 120%; 
+	color: #000000;	
+	font-weight: bold;	
+	padding: 5px 0px 0px 0px;
+}
+
+.titrecolloquium
+{
+	font-size: 140%; 
+	color: #000000;
+	font-weight: bold;	
+	padding: 60px 0px 0px 0px;
+}
+
+
+
+div#liste1
+{
+	font-size: 120%; 
+	color: #000000;	
+	margin:0px 0px 0px 0px;
+	padding:0px 0px 20px 10px;
+}
+
+#liste1 ol li
+{
+	list-style-type: disc;
+	list-style-position: inside;
+	padding:0 0 7px 0;
+	color:"red";
+}
+
+div#liste2
+{
+	font-size: 100%; 
+	color: #000000;	
+	margin:0px 0px 0px 0px;
+	padding:0px 0px 0px 10px;
+}
+
+#liste2 ol li
+{
+	list-style-type: disc;
+	list-style-position: inside;
+	padding:0 0 7px 0;
+	color:"red";
+}
+
+ 
+
+
+
+.petit
+{
+	font-size:90%;
+}
+
+ol
+{
+	padding: 0px 0px 0px 20px;
+}
+ol li
+{
+	padding: 5px 15px 5px 0px;
+	line-height: 140%;
+}
+
+html {
+    overflow-y: scroll;
+    overflow: -moz-scrollbars-vertical;
+}
+
+hr
+{
+	text-align:center;
+	margin-top: 40px;
+	margin-bottom: 10px;
+}
+
+.in_code
+{
+	font-family: "Courier";
+	background-color:black;
+	color:white;
+}
+
+
+.schedule table, tr {
+	border-collapse: collapse;
+	text-align: center;
+	width: 100%;
+}
+
+.schedule table {
+	margin: 30px 0px 10px 0px;
+}
+
+.schedule tr {
+	width: 820px;
+	border: 1px solid #aaaaaa;
+}
+
+.schedule td, th {
+	padding: 10px 10px 10px 10px;	
+	border: 1px solid #aaaaaa;
+}

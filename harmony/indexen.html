@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset=utf-8 />
+	<meta name="description" content="Harmony" />
+        <title>Harmony</title>
+        <link rel="stylesheet" href="/css/style.css" type="text/css" />
+	<link rel="icon" href="favicon.ico" type="image/x-icon" /><link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>	
+    </head>
+    <body>
+	<div id="main">
+		<div id="header">
+			<p> <a href="indexfr.html">Français</a></p>
+		</div>
+		<div id="maincontentfull">
+				
+				<p class="titre0">Harmony</p>
+				<p class="imgfloatright"> <img src="/ressources/Harmony5-p.png" height=300px /> </p>
+				<p><em>Harmony</em> is a mathematical software created by <a href="https://sites.google.com/view/jonah-gaster/home">Jonah Gaster</a> and <a href="https://www.brice.loustau.eu/indexfr.html">Brice Loustau</a>.
+
+				<p>On this page you will find a brief overview of the program, install guidelines, and a quick guide for getting started.</p><br />
+
+				<div id="liste1">
+					<ol>
+						<li><a href="#briefoverview">Brief overview</a></li>
+						<li><a href="#install">Install</a></li>
+						<li><a href="#gettingstarted">Getting started</a></li>
+						<li><a href="#abouttheprogram">About the program</a></li>
+					</ol>
+				</div>
+
+				<p class="titre2" id="briefoverview">Brief overview</p>
+				<p>The core algorithm of the program computes and shows equivariant harmonic maps from the hyperbolic plane \(\mathbb{H}^2\) to 
+				the hyperbolic plane \(\mathbb{H}^2\) (or in the future, hyperbolic 3-space \(\mathbb{H}^3\) and more general symmetric spaces).
+				More precisely, given a closed surface group and a mesh depth, and given left and right Fuchsian representations,
+				the program computes the unique discrete equivariant harmonic map from the left \(\mathbb{H}^2\) to 
+				the right \(\mathbb{H}^2\).</p>
+
+				<p>Two iterative methods are implemented: a discrete heat flow and a center of mass method. 
+				The discrete heat flow is essentially a gradient descent for the energy functional,
+				while the center of mass method consists in replacing the function by its own average on neighbor values. 
+				The convergence of both algorithms relies on the convexity properties of the discrete energy.</p>
+				
+
+				<p>The mathematical aspects are discussed in detail in the paper <em>Computing discrete equivariant harmonic maps</em>
+				by Jonah Gaster, Brice Loustau and Léonard Monsaingeon. ArXiv link: <a href="https://arxiv.org/abs/1810.11932">arXiv:1810.11932</a>.</p>
+
+
+				<br />
+				<p class="titre2" id="install">Install</p>
+
+				<p><em>Harmony</em> is free and open source (under the <a href="http://www.gnu.org/copyleft/gpl.html">GNU General Public License</a>). 					The software is currently in pre-release (beta) version. That means that it is functional and stable, but has not been deployed:
+				unfortunately we have not made any "easy setup" file yet.</p>
+
+				<p>Until version 1.0 is released, in order to use <em>Harmony</em> you'll need to compile it from source. This first requires installing the Qt framework or development tools on your system. If your operating system is Windows or Mac OS, the process can be a bit difficult and we do not recommend it unless you're an experienced user. If you'd like to try, you should get Qt Open Source from <a href="https://www.qt.io/download">the official site</a>.</p>
+
+				
+				<p>If you are using a GNU/Linux operating system, follow these simple steps to compile from source:</p>
+					<ol>
+						<li>Install the Qt framework. For Debian-based distributions such as Ubuntu and Mint: 
+						<br /><span class = "in_code">sudo apt-get install qt5-default qtdeclarative5-dev</span>
+						<br />should do the trick. For other distributions, you can probably figure out how to install Qt development tools upon a quick web search.</li>
+
+						<li>Download <a href="https://github.com/seub/Harmony/raw/master/Sources2018-11-24.tar.xz">this archive</a> and extract it. NB: It's better to clone the git repository for the latest version:
+						<br /><span class = "in_code">git clone https://github.com/seub/Harmony.git</span></li>
+						<li>Open a terminal, navigate to the directory with the source files and run:
+						<br /><span class = "in_code">qmake -qt5</span>
+						<br />and then
+						<br /><span class = "in_code">make</span>
+						<br /> (this last step can be speeded up with <span class = "in_code">make -j N</span> instead, where N is your number of processor cores)
+						<li>You're done! A binary file "Harmony" was generated. To run it, double-click the file or run it from a terminal:
+						<br /><span class = "in_code">./Harmony</span>.
+					</ol>
+
+				<br />
+				<p class="titre2" id="gettingstarted">Getting started</p>
+
+				<p>The main window of <em>Harmony</em> consists of a left panel (menu) and two canvases, both showing the hyperbolic plane in the Poincaré disk model:</p>
+				<p> <center><img src="/ressources/Pic7raw.png" width=98% /></center><br> </p>
+				
+				<p>In order to start, you need to select Fuchsian representations for the closed surface group of genus \(g\), one for the left and one for the right canvases. You can also adjust the genus and the mesh depth, but for now you can leave the default values \(g = 2\) and \(\text{depth} = 4\).
+You can choose representations from the drop down menus "Set \(\rho\) left..." and "Set \(\rho\) right...". The main option is to open the "Fenchel Nielsen selector" window:</p>
+
+				<p> <center><img src="/ressources/pic5raw-reduced.png" width=98% /></center><br> </p>
+
+				<p>From there you can pick Fenchel-Nielsen coordinates of your choosing for the representation. The canvas shows a fundamental domain for the generated Fuchsian group and a triangulation of it. The blue arcs represent the axes of the generators of the Fuchsian group. As an alternative to the "Fenchel-Nielsen" selector, you can choose a "random" Fuchsian representation, or, in genus 2, the token "nice" Fuchsian representation represented below:</p>	
+
+				<p> <center><img src="/ressources/Pic8.png" width=60% /></center><br> </p>
+
+				<p>Once both left and right representations are set, the program will compute a triangulation of the domain surface according to the mesh depth, and an initial "piecewise linear" equivariant map from the domain to the target:</p>
+
+				<p> <center><img src="/ressources/Pic9.png" width=98% /></center><br> </p>
+
+				<p>The map is "visualized" by matching each triangle on the left to a triangle on the right. You can hover the mouse over the triangles in order to see matching triangles (highlighted in blue).<p>
+
+				<p>You are now ready to run the algorithm for finding the unique discrete equivariant harmonic map. First you need to choose a flow method
+				from the menu: cosh-center of mass method, discrete heat flow (constant step), or discrete heat flow (optimal step). At this stage,
+				the most effective in practice is the cosh-center of mass method. The optimal step discrete heat flow is not a good practical choice: the number of iterations is usually less than the constant step discrete heat flow, but the time of execution is far greater.</p>
+
+				<p>You can now hit the "Run flow (&#x221e;)" button to run the algorithm. Make sure you keep the box "Show live" checked in order to visualize the flow. The flow will stop when the target precision is reached, or when you hit the "Stop" button.</p>
+
+				<p> <center><img src="/ressources/Pic10.png" width=98% /></center><br> </p>
+
+				<p>After the harmonic map has been computed, you should explore the display options to visualize it in different ways.
+				The display menu on the left allows you to change the color, to draw translates around a vertex or all vertices (by default,
+				only fundamental domains are shown). You can also change the coloring style from "None" to "Plain": the triangles in the image
+				will then be drawn lighter or darker depending on how contracting or dilating the map is:</p>
+
+				<p> <center><img src="/ressources/Pic11raw-reduced.png" width=98% /></center><br> </p>
+
+				<p>You can also play with the display of either hyperbolic planes with the following controls:</p>
+				<ul>
+						<li>Click and drag to apply hyperbolic isometries.</li>
+						<li>Click and drag while holding Ctrl to apply elliptic isometries.</li>
+						<li>Click and drag while holding Shift to translate the view. Alternatively, use the arrow keys.</li>
+						<li>Scroll to zoom in/out. Alternatively, use the + and - keys.</li>
+
+				</ul>
+
+				<br />
+				<p class="titre2" id="abouttheprogram">About the program</p>
+				<p>The program was coded in C++ using the <a href="http://qt-project.org/">Qt framework</a>. It is free and open source (under the <a href="http://www.gnu.org/copyleft/gpl.html">GNU General Public License</a>), all the sources and other files are available on GitHub: <a href="https://github.com/seub/Harmony">https://github.com/seub/Harmony</a>.
+	</div>
+    </body>
+</html>
+
+

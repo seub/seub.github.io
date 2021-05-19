@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset=utf-8 />
+	<meta name="description" content="Circle Packings" />
+        <title>Circle Packings</title>
+        <link rel="stylesheet" href="/css/style.css" type="text/css" />
+	<link rel="icon" href="favicon.ico" type="image/x-icon" /><link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    </head>
+    <body>
+	<div id="main">
+		<div id="header">
+			<p> <a href="indexfr.html">Français</a></p>
+		</div>
+		<div id="maincontentfull">
+				<p class="titre0">Circle Packings</p>
+				<p><em>Circle Packings</em> is a mathematical software created by <a href="http://www.univ-orleans.fr/mapmo/membres/beeker/index.php?langue=en">Benjamin Beeker</a> and <a href="https://www.brice.loustau.eu/indexfr.html">Brice Loustau</a>. Try it! It is free and easy to install and to use.</p> 
+
+				<p>On this page you will find a brief overview of the program features and a quick install guide. More detailed information is included in the 'Help' menu of the program.</p><br />
+
+				<div id="liste1">
+					<ol>
+						<li><a href="#briefoverview">Brief overview</a></li>
+						<li><a href="#quickinstall">Quick install</a></li>
+						<li><a href="#abouttheprogram">About the program</a></li>
+					</ol>
+				</div>
+
+				<p class="titre2" id="briefoverview">Brief overview</p>
+				<p>The core algorithm of the program numerically computes the circle packing associated to a planar graph given by <em>the circle packing theorem</em><sup>1</sup>, as 					illustrated in the screen capture below:</p>
+				<p> <center><img src="/ressources/circlepackings1.png" width=95% /></center><br> </p>
+				<p>Following Thurston's idea, the program shows the circle packing associated to a simply connected domain in the plane, in view to approximate the Riemann conformal 					mapping<sup>2</sup>:
+				<p> <center><img src="/ressources/circlepackings2.png" width=95% /></center><br> </p>
+				<p>Based on that idea, the program can compute the Riemann conformal mapping between any two simply connected domains. 
+				Here is an example with an image in the background:</p>
+				<p> <center><img src="/ressources/circlepackings3.png" width=95% /></center><br> </p>
+
+				<hr width=75% noshade size=2>
+				<p class="petit"><sup>1</sup>Refer to the Wikipedia page <a href="http://en.wikipedia.org/wiki/Circle_packing_theorem">Circle packing theorem</a> for more information. The numerical algorithm is due to mathematicians Charles R. Collins and Ken Stephenson. Stephenson also created a program revolving around circle packings, you will find his software (and interesting mathematical material) on <a href="http://www.math.utk.edu/~kens/">his web page</a>.</p>
+				<p class="petit"><sup>2</sup>Refer to the Wikipedia page <a href="http://en.wikipedia.org/wiki/Circle_packing_theorem">Circle packing theorem</a> as a starting point to learn more.</p>
+
+
+				<br />
+				<p class="titre2" id="quickinstall">Quick install</p>
+				
+				<p class="titre3">Windows</p>
+				<p>Download and run <a href="https://github.com/downloads/seub/CirclePackings/CirclePackingsSetup.exe">this setup file</a>. For Windows XP, use <a href="https://github.com/downloads/seub/CirclePackings/CirclePackingsSetupXP.exe">this file</a> instead.</p>
+				<p class="titre3">Mac OS</p>
+				<p>Download and install <a href="https://github.com/downloads/seub/CirclePackings/CirclePackings.dmg">this dmg file</a>. You may also compile the program from the soures, the procedure is the same as for Linux (see below).
+				<p class="titre3">Linux</p>
+				<p>If you have a Debian based distribution (Ubuntu, Mint...), you may download <a href="https://github.com/downloads/seub/CirclePackings/circlepackings_1.0_i386.deb">this package</a> (32 bits, runs on all systems but is slower) or <a href="https://github.com/downloads/seub/CirclePackings/circlepackings_1.0_amd64.deb">this package</a> (64 bits systems only).
+				<p>To install the package, simply double-click the dowloaded file if you have a graphical software manager (which should automatically install dependencies). Otherwise, open a terminal and enter <span class = "in_code">sudo dpkg -i "filename"</span>. You will be prompted to install some dependencies, do it and run the previous command again.
+				<p> Alternatively, the program may be compiled from the sources. Here is how this is done:
+					<ol>
+						<li>Install the Qt framework. For Debian based distributions such as Ubuntu and Mint, <span class = "in_code">sudo apt-get install qt5-default qtdeclarative5-dev</span> should do the trick. For other distributions, you can probably figure out how to install Qt development tools upon a quick web search.</li>
+						<li>Download <a href="https://github.com/downloads/seub/CirclePackings/CirclePackings.tar.gz">this archive</a> and extract it. NB: You may also clone the git repository: <span class = "in_code">git clone https://github.com/seub/CirclePackings.git</span>.</li>
+						<li>Open a terminal, navigate to the directory extracted from the archive and run <span class = "in_code">qmake -qt5</span> then <span class = "in_code">make</span> (or <span class = "in_code">make -j N</span> to speed it up, where N is the number of cores on your computer).</li>
+						<li>You're done! A binary file "CirclePackings" was generated. To run it, double-click the file or run it from a terminal: <span class = "in_code">./CirclePackings</span>. NB: To create shortcuts, set the application icon, etc: unfortunately this is beyond our scope. For instance, you may follow <a href="http://xiaonosekai.wordpress.com/2012/06/16/how-to-create-launcher-for-the-dash-of-unity/">this guide</a> for Ubuntu with Unity.
+					</ol>
+
+				<br />
+				<p><strong>Note:</strong> Installation was tested on several operating systems but one is never safe from compatibility issues, 
+				so please <a href="mailto:brice@loustau.eu">let us know</a> if you experience an issue. Once the software is installed, 
+take a quick look at the Help menu to learn more about the program and how to use it.</p>
+
+
+				<br />
+				<p class="titre2" id="abouttheprogram">About the program</p>
+				<p>The program was coded in C++ using the <a href="http://qt-project.org/">Qt framework</a>. It is free and open source (under the <a href="http://www.gnu.org/copyleft/gpl.html">GNU General Public License</a>), all the sources and other files are available on GitHub: <a href="https://github.com/seub/CirclePackings">https://github.com/seub/CirclePackings</a>. The choice of the programming language was motivated notably by performance considerations.</p>
+				<p>The current "stable" version (1.0) of our software was released in October 2012.</p>
+	</div>
+    </body>
+</html>
+
+

@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset=utf-8 />
+	<meta name="description" content="Brice Loustau" />
+        <title>Math 237: Discrete Structures (Fall 2017)</title>
+        <link rel="stylesheet" href="/css/style.css" type="text/css" />
+	<script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
+	<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    </head>
+    <body>
+	<div id="main">
+		<div id="maincontentfull">
+
+		<p><a href="/teaching.html">Back to Brice Loustau's web page</a>.</p>
+
+
+		<br />
+		<br />		
+		<p class="titre1">Math 237: Discrete Structures (Fall 2017)</p>
+		<br />	
+
+		<!-- <p class="titre2" style="color:red" id="specialannouncements">Special announcements</p>
+		<div id="liste2"> <ol>
+					<li>01/18/2017: First day of class.</li>
+				</ol> 
+		</div>
+		<br /> -->
+
+		<br /><br />
+		<p class="titre2">Contents</p>
+		<div id="liste1">
+			<ol>
+				<li><a href="#syllabus">Syllabus</a></li>
+				<li><a href="#textbook">Textbook</a></li>
+				<li><a href="#classtime">Class time and location & Office hours</a></li>
+				<li><a href="#coursepolicies">Course policies</a></li>
+				<li><a href="#contact">Contact</a></li>
+				<li><a href="#courseschedule">Course schedule</a></li>
+			</ol>
+		</div>
+
+		<br /><br />
+		<p class="titre2" id="syllabus">Syllabus</p>
+		<p>Download the course syllabus <strong><a href="237syllabus.pdf">here</a></strong>. 
+		The syllabus contains essential information about the course (textbook, prerequisites, course description, material covered, etc.).</p>
+
+		<br />
+		<p class="titre2" id="textbook">Textbook</p>
+
+		<p>The official textbook for this course is: <i>Discrete Mathematics</i> (7th edition), authored by Richard Johnsonbaugh, published by
+		Pearson. See
+		<strong><a href="https://www.pearson.com/us/higher-education/program/Johnsonbaugh-Discrete-Mathematics-7th-Edition/PGM44460.html">this link</a></strong> for the full reference.</p>
+		<p><strong>Note:</strong> Although we will use the 7th edition, getting the 8th edition is also fine. 
+		You may also get a digital version of the book.</p>
+
+	
+		<br /><br />
+		<p class="titre2" id="classtime">Class time and location & Office hours</p>
+
+		<p class="titre3">Class time and location:</p>
+		<p>Monday: 10:00am-11:20am, Smith Hall B-24<br />
+		Wednesday: 10:00am-11:20am, Smith Hall B-24</p>
+
+		<p class="titre3">Office hours:</p>
+		<p>Monday: 1:15-2:15pm, Smith Hall 308<br />
+		Wednesday: 2:30-3:30pm, Smith Hall 308</p>
+
+		
+		<br /><br />
+		<p class="titre2" id="coursepolicies">Course policies</p>
+
+		
+		<p class="titre3">Grading policy</p>
+
+		<p>Your overall grade for the course will be a precise combination of:
+
+			<ol>
+				<li> Your global quiz grade $G_1$. There will be about 9 quizzes in the semester. Each quiz grade will be automatically scaled to a grade /100, 
+and at the end all the quiz grades, dropping the lowest two, will be averaged to a global quiz grade.</li>
+				<li> Your global midterm grade $G_2$. There will be two midterm exams, whose grades will be automatically scaled to grades /100, and then 					averaged to a global midterm grade.</li>
+				<li> Your final exam grade $G_3$. There will be one final exam, whose grade will also be automatically scaled to a grade /100.
+			</ol>
+
+		Note: Although your homework assignements will not be collected nor graded, they will often provide a basis for the quiz questions.</p>
+
+		<p>The formula for your overall grade $G$ for the course will be: $G = c_1  G_1 +  c_2 G_2 + c_3 G_3$,
+		where the coefficients $c_1$, $c_2$ and $c_3$ will be around $c_1 = 35\%$, $c_2 = 30\%$ and $c_3 = 35\%$. These coefficients may be subject to marginal 		change.</p>
+
+		<p>Finally, you will be assigned a letter grade for the course depending only on your overall grade $G$, according to the following table:
+
+
+
+		<div class="schedule">
+		<table style="width:250px">
+
+         	<tr>
+                	<th style="width:150px">Overall grade</th>
+			<th style="width:100px">Letter grade</th>
+                </tr>
+		
+
+		<tr>
+                	<td> 90% &le; G &le; 100%</td>
+			<td>A</td>
+                </tr>
+
+		<tr>
+                	<td> 80% &le; G < 90%</td>
+			<td>B+</td>
+                </tr>
+
+		<tr>
+                	<td> 70% &le; G < 80%</td>
+			<td>B</td>
+                </tr>
+
+		<tr>
+                	<td> 60% &le; G < 70%</td>
+			<td>C+</td>
+                </tr>
+
+		<tr>
+                	<td> 50% &le; G < 60%</td>
+			<td>C</td>
+                </tr>
+
+		<tr>
+                	<td> 40% &le; G < 50%</td>
+			<td>D</td>
+                </tr>
+
+		<tr>
+                	<td> 0% &le; G < 40%</td>
+			<td>F</td>
+                </tr>
+
+		</table>
+		</div>
+
+		<br />
+		Note: There will be no exceptions to the grading policy described above.
+
+		</p>
+
+		<p class="titre3">Attendance & Excused absence policy</p>
+
+		<p>Attendance is mandatory: you are required to attend every class.</p>
+
+		<p>If you must miss a class for a legitimate reason, you are required to 
+		<a href="mailto:brice@loustau.eu">inform me</a></strong> as soon as possible and provide documentation for your absence.
+		If you miss a midterm exam, there will not be automatically a make-up exam if the reason of absence is not serious or the notice is too short.
+		There will be no make-up quizzes, even if you miss a quiz with a valid reason of absence.</p>
+
+		
+
+
+		<p class="titre3">Textbook vs Lecture notes</p>
+
+		<p>Although we will follow the outline of the textbook very closely, your lecture notes 
+		should always be your primary source of information. You can only be expected
+		to know the contents of the lectures, unless you are explicitely asked to review specific segments of the textbook.
+		Nevertheless, the textbook is a great secondary source of information and will be the main source of problems, which are of the utmost importance.</p>
+
+		<p class="titre3">Calculator</p>
+
+		<p>You will never need to use a calculator in this course. Calculators will not be allowed during quizzes or exams.</p>
+
+		<p class="titre3">General advice</p>
+
+		<p>Our goal is to provide all the resources necessary for you to succeed and
+		learn great mathematics in the process, regardless of your background coming in. 
+		Nevertheless, you may find this course very challenging. Attending every class
+		is absolutely necessary to meet the challenge but in no way will it be sufficient. The key to your success rests on yourself: it 
+		will require hard work, including hours of study, lots of problem solving, and your active involvement in learning both in and outside of the classroom. 
+		Of course, you will be assisted in your efforts, and I encourage you to <a href="#contact">reach me</a> as often as you need.</p>
+
+
+
+		<br /><br />
+		<p class="titre2" id="contact">Contact</p>
+
+		<p>My e-mail is <strong><a href="mailto:brice@loustau.eu">brice@loustau.eu</a></strong>. I encourage you to write with any questions.</p>
+
+		<p>My office is 308 in Smith Hall. You are welcome during office hours (see <a href="#classtime">above</a>), you may also see me outside of office hours by appointment (first send 
+		me an e-mail).</p>
+			
+
+		<br /><br />
+		<p class="titre2" id="courseschedule">Course schedule</p>
+
+
+		<p>For general important dates in the semester, see the academic calendar <strong><a href="https://registrar.newark.rutgers.edu/office-registrar-fall-academic-calendar">here</a></strong>.</p>
+
+
+		<p>Refer to the course schedule below very regularly. It contains among other things the <strong>homework assignments</strong> and the <strong>past quizzes and exams</strong>.</p>
+
+
+		<p><strong>This course schedule is only tentative: it is very much subject to change</strong>. Always refer to last version online, and make sure that you <a href="javascript:window.location.reload();">refresh the page</a>.</p>
+
+
+
+		<br />
+		<div class="schedule">
+
+		<table>
+
+            	<tr>
+                	<th style="width:70px">Date</th>
+                	<th>Topic</th>
+			<th style="width:270px">Homework assignment</th>
+			<th style="width:160px">Special</th>
+                </tr>
+
+		<tr>
+                	<td>Wed 09/05</td>
+                	<td>
+				Discussion of course policies<br />
+				Introduction to the course<br />
+				<b>Chapter 1:  Sets and Logic</b><br />
+				1.1 Sets
+			</td>
+			<td></td>
+			<td>First day of class</td>
+                </tr>
+
+		<tr>
+                	<td>Mon 09/11</td>
+                	<td>
+				1.1 Sets<br />
+			</td>
+			<td>
+				Review lecture notes<br />
+				1.1 Review exercises 1-15
+			</td>
+			<td></td>
+                </tr>
+
+		<tr>
+                	<td>Tue 09/12</td>
+                	<td>-</td>
+			<td>-</td>
+			<td>Last day to drop a course without a "W" grade</td>
+                </tr>
+
+		<tr>
+                	<td>Wed 09/13</td>
+                	<td>
+				1.2 Propositions<br />
+				1.3 Conditional Propositions and Logical Equivalence<br />
+			</td>
+			<td>
+				Review lecture notes<br />
+				1.1 Exercises: 1-48, 57-93, 95
+			</td>
+			<td></td>
+                </tr>
+
+		<tr>
+                	<td>Mon 09/18</td>
+                	<td>
+				1.4 Arguments and Rules of Inference<br />
+				1.5 Quantifiers<br />
+				1.6 Nested Quantifiers
+			</td>
+			<td>
+				Review lecture notes<br />
+				1.2 Exercises: All<br />
+				1.3 Exercises: All except 74, 75
+			</td>
+			<td>
+				<strong><a href="quiz1.pdf">Quiz #1</a></strong><br />
+				<strong><a href="quiz1sol.pdf">Quiz #1 Solutions</a></strong>
+			</td>
+                </tr>
+
+		<tr>
+                	<td>Wed 09/20</td>
+                	<td>
+				1.5 Quantifiers<br />
+			</td>
+			<td>
+				Review lecture notes<br />
+				1.4 Exercises: 1-17
+			</td>
+			<td></td>
+                </tr>
+
+		<tr>
+                	<td>Mon 09/25</td>
+                	<td>
+				1.6 Nested Quantifiers
+			</td>
+			<td>
+				Review lecture notes<br />
+				1.5 Exercises: 1-67
+			</td>
+			<td>
+				<strong><a href="quiz2.pdf">Quiz #2</a></strong><br />
+				<strong><a href="quiz2sol.pdf">Quiz #2 Solutions</a></strong>
+			</td>
+                </tr>
+
+		<tr>
+                	<td>Wed 09/27</td>
+                	<td>
+				<b>Chapter 2: Proofs</b><br />
+				2.1 Proofs and Counterexamples<br />
+				2.2 More Proof Methods
+			</td>
+			<td>
+				Review lecture notes<br />
+				1.6 Exercises: 1-92
+			</td>
+			<td></td>
+                </tr>
+
+		<tr>
+                	<td>Mon 10/02</td>
+                	<td>	
+				2.1 Proofs and Counterexamples<br />
+				2.2 More Proof Methods
+			</td>
+			<td>
+				Review lecture notes<br />
+				Exercise given in class
+			</td>
+			<td>
+				<strong><a href="quiz3.pdf">Quiz #3</a></strong><br />
+				<strong><a href="quiz3sol.pdf">Quiz #3 Solutions</a></strong>
+			</td>
+                </tr>
+
+		<tr>
+                	<td>Wed 10/04</td>
+                	<td>	
+							
+				2.2 More Proof Methods<br />
+			<td>
+				Review lecture notes<br />
+				2.1 Exercises 6-15, 19-27, 44-54
+			</td>
+			</td>
+			<td></td>
+                </tr>
+
+		<tr>
+                	<td>Mon 10/09</td>
+                	<td>						
+				2.4 Mathematical Induction
+			</td>
+			<td>
+				Review lecture notes<br />
+				2.2 Exercises 1, 6-8, 12, 15, 16, 18, 21, 22-27, 30, 32, 33, 37-39, 43, 48
+			</td>
+			<td>
+				<strong><a href="quiz4.pdf">Quiz #4</a></strong><br />
+				<strong><a href="quiz4sol.pdf">Quiz #4 Solutions</a></strong>
+			</td>
+                </tr>
+
+		<tr>
+                	<td>Wed 10/11</td>
+                	<td>	
+				2.4 Mathematical Induction<br />		
+				<b>Chapter 3: Functions</b><br />
+				3.1 Relations and Functions<br />
+			</td>
+			<td>
+				Review lecture notes<br />
+				2.4 Exercises 1-9, 14, 21-26, 28
+			</td>
+			<td></td>
+                </tr>
+
+		<tr>
+                	<td>Mon 10/16</td>
+                	<td>-</td>
+			<td><strong><a href="test1topics.pdf">List of topics</a></strong></td>
+			<td>
+				<strong><a href="exam1.pdf">EXAM #1</a></strong><br />
+				<strong><a href="exam1sol.pdf">EXAM #1 Solutions</a></strong>
+			</td>
+                </tr>
+
+		<tr>
+                	<td>Wed 10/18</td>
+                	<td>
+				3.1 Relations and Functions
+			</td>
+			<td>
+				Review lecture notes<br />
+			</td>
+			<td></td>
+                </tr>
+
+		<tr>
+                	<td>Mon 10/23</td>
+                	<td>
+				3.1 Relations and Functions<br />
+				3.2 Sequences and Strings<br />
+			</td>
+			<td>
+				Review lecture notes<br />
+				Exercise given in class<br />
+				3.1 Exercises 1-5 (except the part about the inverse function), 10-31, 51-52, 82-88, 98-103
+			</td>
+			<td><strong>No quiz</strong></td>
+                </tr>
+
+		<tr>
+                	<td>Wed 10/25</td>
+                	<td>
+				3.2 Sequences and Strings<br />
+				3.3 Relations
+			</td>
+			<td>
+				Review lecture notes<br />
+				Exercises given in class<br />
+				3.1 Exercises 1-5, 32-47, 62-70, 90-97
+			</td>
+			<td></td>
+                </tr>
+
+		<tr>
+                	<td>Mon 10/30</td>
+                	<td>
+				3.3 Relations<br />				
+				3.4 Equivalence Relations
+			</td>
+			<td>
+				Review lecture notes<br />
+				3.2 Exercises 1-82, 116-122, 124, 129-131
+			</td>
+			<td>
+				<strong><a href="quiz5.pdf">Quiz #5</a></strong><br />
+				<strong><a href="quiz5sol.pdf">Quiz #5 Solutions</a></strong>
+			</td>
+                </tr>
+
+		<tr>
+                	<td>Wed 11/01</td>
+                	<td>
+				3.4 Equivalence Relations<br />
+				3.5 Matrices of Relations<br />
+				3.6 Relational Databases
+			</td>
+			<td>
+				Review lecture notes<br />
+				3.3 Exercises 1-55, (56-59)
+			</td>
+			<td></td>
+                </tr>
+
+		<tr>
+                	<td>Mon 11/06</td>
+                	<td>
+				<b>Chapter 4: Algorithms</b><br />
+				4.1 Introduction<br />
+				4.2 Examples<br />	
+				4.3 Analysis of Algorithms
+			</td>
+			<td>
+				Review lecture notes<br />
+				Exercises given in class<br />
+				3.4 Exercises 1-20, 24, 27, 28
+			</td>
+			<td>
+				<strong><a href="quiz6.pdf">Quiz #6</a></strong><br />
+				<strong><a href="quiz6sol.pdf">Quiz #6 Solutions</a></strong><br />
+				Last day to drop a course with a "W" grade
+			</td>
+                </tr>
+
+		<tr>
+                	<td>Wed 11/08</td>
+                	<td>
+				4.2 Examples<br />
+				4.3 Analysis of Algorithms
+			</td>
+			<td>
+				Review lecture notes<br />
+				4.1 Exercises 5, 9-12, 14<br />
+				4.2 Exercises 4-7, 14, 19
+			</td>
+			<td></td>
+                </tr>
+
+		<tr>
+                	<td>Mon 11/13</td>
+                	<td>-</td>
+			<td>
+				Review lecture notes<br />
+				4.3 Exercises 1-28, 33-34, 60-61<br />
+				<strong><a href="exam2topics.pdf">List of topics</a></strong>
+			</td>
+			<td>
+				<a href="exam2.pdf"><strong>EXAM #2</strong></a><br />
+				<a href="exam2sol.pdf"><strong>EXAM #2 Solutions</strong></a>
+			</td>
+                </tr>
+
+		<tr>
+                	<td>Wed 11/15</td>
+                	<td>
+				4.4 Recursive Algorithms<br />							
+				<b>Chapter 7: Recurrence relations</b><br />
+				7.1 Introduction
+			</td>
+			<td>
+				Review lecture notes
+			</td>
+			<td></td>
+                </tr>
+
+		<tr>
+                	<td>Mon 11/20</td>
+                	<td>
+				7.2 Solving Recurrence Relations<br />
+				7.3 Analysis of Algorithms
+			</td>
+			<td>
+				Review lecture notes<br />
+				4.4 Exercises 1, 5, 6, 9, 12, 13<br />
+				7.1 Exercises 1-17, 56-57, (70)
+			</td>
+			<td><strong>No quiz</strong></td>
+                </tr>
+
+		<tr>
+                	<td>Wed 11/22</td>
+                	<td>-</td>
+			<td>-</td>
+			<td><strong>Class cancelled</strong><br>follows a Friday schedule</td>
+                </tr>
+
+
+		<tr>
+                	<td></td>
+                	<td>-</td>
+			<td>-</td>
+			<td>Thanksgiving recess<br />11/23 - 11/26</td>
+                </tr>
+
+
+
+		<tr>
+                	<td>Mon 11/27</td>
+                	<td>
+				7.3 Analysis of Algorithms: complexity of selection sort<br />					
+				<b>Chapter 6: Counting methods</b><br />
+				6.1 Basics
+			</td>
+			<td>
+				Review lecture notes<br />
+				Problem given in class<br />
+				7.2 Exercises 11-14, 27, (29-32)
+			</td>
+			<td>
+				<strong><a href="quiz7.pdf">Quiz #7</a></strong><br />
+				<strong><a href="quiz7sol.pdf">Quiz #7 Solutions</a></strong>
+			</td>
+                </tr>
+
+		<tr>
+                	<td>Wed 11/29</td>
+                	<td>
+				6.1 Basics<br />				
+				6.2 Permutations and Combinations
+			</td>
+			<td>
+				Review lecture notes<br />
+				Homework problems given in class<br />
+				7.3 Exercises 28-39<br />
+				6.1 Exercises 4-12, 15-16, 31-37, 44-60
+			</td>
+			<td></td>
+                </tr>
+
+		<tr>
+                	<td>Mon 12/04</td>
+                	<td>
+				6.2 Permutations and Combinations<br />
+				(6.7 Binomial coefficients and Combinatorial identities)<br />
+				6.8 The pigeonhole principle
+			</td>
+			<td>
+				Review lecture notes<br />
+				6.1 Exercises 4-12, 15-16, 20-27, 31-37, 44-60, 86, 87, 90, 91<br />
+				6.2 Exercises 1-13, 25-29, 33-38, 40-41, 43-47, 60-64
+			</td>
+			<td>
+				<strong><a href="quiz8.pdf">Quiz #8</a></strong><br />
+				<strong><a href="quiz8sol.pdf">Quiz #8 Solutions</a></strong>
+			</td>
+                </tr>
+
+		<tr>
+                	<td>Wed 12/06</td>
+                	<td>
+				<b>Chapter 5: Number theory</b><br />
+				5.1 Divisors
+			</td>
+			<td>
+				Review lecture notes<br />
+				Homework problems given in class<br />
+				6.7 Exercises 1, 2, 22<br />
+				6.8 Exercises 1-4, (6), 7-8
+			</td>
+			<td></td>
+                </tr>
+
+		<tr>
+                	<td>Mon 12/11</td>
+                	<td>
+				5.2 Representations of Integers and Integer Algorithms<br />
+				(5.4 The RSA Public-Key Cryptosystem)
+			</td>
+			<td>
+				Review lecture notes<br />
+				Homework problem given in class<br />
+				5.1 Exercises 1-33
+			</td>
+			<td>
+				<strong><a href="quiz9.pdf">Quiz #9</a></strong><br />
+				<strong><a href="quiz9sol.pdf">Quiz #9 Solutions</a></strong>
+			</td>
+                </tr>
+
+		<tr>
+                	<td>Wed 12/13</td>
+                	<td>Review session
+			</td>
+			<td>
+				Review lecture notes<br />
+				5.2 Exercises 1-41
+			</td>
+			<td></td>
+                </tr>
+
+		<tr>
+                	<td>Mon 12/18</td>
+                	<td><strong>FINAL EXAM</strong></td>
+			<td>
+				<strong><a href="finaltopics.pdf">List of topics</a></strong>
+			</td>
+			<td>
+				<strong>FINAL EXAM</strong><br />
+				Time: 11:45 - 2:45pm<br />
+				Location: Smith B-24
+			</td>
+                </tr>
+            
+            	</table>
+
+		<br /><br />
+
+		<p><a href="/teaching.html">Back to Brice Loustau's web page</a>.</p>
+			
+		</div>
+	</div>
+    </body>
+</html>
+
+

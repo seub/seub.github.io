@@ -1,0 +1,6 @@
+SE CONNECTER AU WEBMAIL IMPA
+https://webmail.impa.br/imp/login.php
+Login: loustau
+Mot de passe: plokij
+
+Dans le menu de gauche: Paramétrage du compte/Gestionnaire de fichier/sites
