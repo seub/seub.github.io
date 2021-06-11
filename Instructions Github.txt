@@ -1,0 +1,18 @@
+
+
+
+
+UPDATE WEBSITE
+
+Update website just like any other Github repo, e.g.:
+git pull origin master
+git commit -am "message describing changes"
+git push origin master
+
+
+
+
+DOCUMENTATION (ABOUT CUSTOM DOMAINS ETC)
+
+https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site
+https://www.namecheap.com/support/knowledgebase/article.aspx/9645/2208/how-do-i-link-my-domain-to-github-pages/
